@@ -1,0 +1,195 @@
+<!doctype html>
+<!--
+================================================================================
+  DESIGNED, ENGINEERED & ARCHITECTED BY BRACKNODES
+  Agency & Development Studio: BrackNodes
+  GitHub:    https://github.com/bracknodes
+  LinkedIn:  https://www.linkedin.com/company/bracknodes
+  Instagram: https://www.instagram.com/bracknodes
+  X/Twitter: https://x.com/bracknodes
+  All Rights Reserved © BrackNodes
+================================================================================
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Immediate Zero-Flash Theme Initialization Script (Runs synchronously before DOM paint) -->
+    <script>
+      (function() {
+        try {
+          var stored = localStorage.getItem('ankit_portfolio_theme');
+          var cmsRaw = localStorage.getItem('bracknodes_portfolio_cms_v2') || localStorage.getItem('ankit_portfolio_cms_v1');
+          var themeMode = 'both';
+          var defaultTheme = 'dark';
+          if (cmsRaw) {
+            var parsed = JSON.parse(cmsRaw);
+            if (parsed && parsed.siteSettings && parsed.siteSettings.themeSettings) {
+              if (parsed.siteSettings.themeSettings.themeMode) themeMode = parsed.siteSettings.themeSettings.themeMode;
+              if (parsed.siteSettings.themeSettings.defaultTheme) defaultTheme = parsed.siteSettings.themeSettings.defaultTheme;
+            }
+          }
+          var target = stored || defaultTheme;
+          if (themeMode === 'dark-only') target = 'dark';
+          if (themeMode === 'light-only') target = 'light';
+          
+          if (target === 'light') {
+            document.documentElement.setAttribute('data-theme', 'light');
+          } else {
+            document.documentElement.removeAttribute('data-theme');
+          }
+        } catch (e) {}
+      })();
+    </script>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23090B10'/><polygon points='50,18 82,82 66,82 50,48 34,82 18,82' fill='%23C7FF6B'/></svg>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#090B10" />
+
+    <!-- ── Search Engine Primary Meta & Title ─────────────────────────────── -->
+    <title>BrackNodes — High-Speed Cloud &amp; Discord Bot Hosting</title>
+    <meta name="description" content="India's leading affordable cloud hosting provider. 24/7 Discord Bot Hosting, NVMe cPanel Web Hosting, and low-latency Cloud VPS starting at just ₹29/month." />
+    <meta name="keywords" content="discord bot hosting india, cpanel hosting india, cheap cloud vps, nvme web hosting, pterodactyl bot hosting, nodejs bot hosting, python bot hosting, low latency server india, bracknodes, bracknodes.in" />
+    <link rel="canonical" href="https://bracknodes.in" />
+
+    <!-- ── Robots Indexing Directives ────────────────────────────────────── -->
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    
+    <!-- ── Authorship & Branding Attribution ─────────────────────────────── -->
+    <meta name="author" content="BrackNodes (https://github.com/bracknodes)" />
+    <meta name="designer" content="BrackNodes" />
+    <meta name="developer" content="BrackNodes (https://github.com/bracknodes)" />
+    <link rel="author" href="https://github.com/bracknodes" title="BrackNodes" />
+
+    <!-- ── Open Graph / Social Media Meta (Facebook, WhatsApp, LinkedIn) ──── -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://bracknodes.in" />
+    <meta property="og:title" content="BrackNodes — High-Speed Cloud &amp; Discord Bot Hosting" />
+    <meta property="og:description" content="India's leading affordable cloud hosting provider. 24/7 Discord Bot Hosting, NVMe cPanel Web Hosting, and low-latency Cloud VPS starting at just ₹29/month." />
+    <meta property="og:site_name" content="BrackNodes" />
+    <meta property="og:locale" content="en_IN" />
+    <meta property="og:image" content="https://bracknodes.in/og-preview.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="BrackNodes Cloud and Discord Bot Hosting Platform" />
+
+    <!-- ── Twitter / X Card Meta ─────────────────────────────────────────── -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@bracknodes" />
+    <meta name="twitter:creator" content="@bracknodes" />
+    <meta name="twitter:title" content="BrackNodes — High-Speed Cloud &amp; Discord Bot Hosting" />
+    <meta name="twitter:description" content="India's leading affordable cloud hosting provider. 24/7 Discord Bot Hosting, NVMe cPanel Web Hosting, and low-latency Cloud VPS starting at just ₹29/month." />
+    <meta name="twitter:image" content="https://bracknodes.in/og-preview.png" />
+    
+    <!-- ── Google Search Engine Crawler Structured Data (Schema.org JSON-LD) ── -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://bracknodes.in/#website",
+          "url": "https://bracknodes.in",
+          "name": "BrackNodes",
+          "description": "High-Speed Cloud & Discord Bot Hosting in India starting at ₹29/month.",
+          "publisher": {
+            "@id": "https://bracknodes.in/#organization"
+          },
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://bracknodes.in/?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://bracknodes.in/#organization",
+          "name": "BrackNodes",
+          "url": "https://bracknodes.in",
+          "logo": "https://bracknodes.in/logo.png",
+          "description": "India's leading affordable cloud hosting provider specializing in 24/7 Discord Bot Hosting, NVMe cPanel Web Hosting, and low-latency Cloud VPS.",
+          "foundingDate": "2024",
+          "sameAs": [
+            "https://x.com/bracknodes",
+            "https://www.instagram.com/bracknodes",
+            "https://www.linkedin.com/company/bracknodes",
+            "https://github.com/bracknodes"
+          ],
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "Customer Support",
+            "email": "support@bracknodes.in",
+            "availableLanguage": ["English", "Hindi"]
+          }
+        },
+        {
+          "@type": "Product",
+          "@id": "https://bracknodes.in/#hosting-plans",
+          "name": "BrackNodes Cloud & Discord Bot Hosting",
+          "description": "High-speed 24/7 Discord bot hosting with Pterodactyl panels and NVMe cPanel web hosting.",
+          "brand": {
+            "@type": "Brand",
+            "name": "BrackNodes"
+          },
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "INR",
+            "lowPrice": "29",
+            "highPrice": "999",
+            "offerCount": "8",
+            "availability": "https://schema.org/InStock",
+            "url": "https://bracknodes.in"
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://bracknodes.in/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What hosting services does BrackNodes offer?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "BrackNodes offers 24/7 Discord Bot Hosting on high-performance Pterodactyl panels (supporting Node.js, Python, Java), lightning-fast NVMe cPanel Web Hosting with free SSL and automated backups, and scalable low-latency Cloud VPS compute starting at just ₹29/month."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How much does Discord bot hosting cost on BrackNodes?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Discord bot hosting plans at BrackNodes start at only ₹29/month with automated instant 60-second activation, DDoS protection, and 99.99% uptime guarantee."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does BrackNodes provide cPanel Web Hosting?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, BrackNodes provides NVMe SSD cPanel hosting complete with free SSL certificates, automated daily backups, Softaculous 1-click app installer, and 24/7 technical support."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How fast is server provisioning at BrackNodes?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "All server and bot hosting plans are provisioned instantly through our automated orchestration system within 60 seconds of order confirmation."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+
+    <!-- Google Fonts Preconnect & Load: Plus Jakarta Sans (Headings & Body), JetBrains Mono (Code/Technical) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

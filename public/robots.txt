@@ -1,0 +1,16 @@
+# BrackNodes Robots & Crawler Policy
+# https://bracknodes.in
+
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /login/
+
+# Disallow indexing of private or admin assets
+Disallow: /admin/*
+Disallow: /*/login
+
+# Sitemaps
+Sitemap: https://bracknodes.in/sitemap.xml
+
